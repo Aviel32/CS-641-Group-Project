@@ -59,44 +59,74 @@ export default class App extends Component {
 
           <View style={styles.containerServices}>
             <View style={styles.containerLeft}>
-              <Image
-                style={styles.containerImage}
-                source={{
-                  uri: 'https://codehs.com/uploads/e4bbb02828471aeba80d5b19daa24eca',
-                }}
-              />
-              <Image
-                style={styles.containerImage}
-                source={{
-                  uri: 'https://codehs.com/uploads/6b19325e1935ee43e75ab139f32de2e8',
-                }}
-              />
-              <Image
-                style={styles.containerImage}
-                source={{
-                  uri: 'https://codehs.com/uploads/b76d7fc259d2a887e59425a42bb95703',
-                }}
-              />
+            <TouchableHighlight
+                onPress={() => {
+                  alert('Home Cleaning Section');
+                }}>
+                <Image
+                  style={styles.containerImage}
+                  source={{
+                    uri: 'https://codehs.com/uploads/e4bbb02828471aeba80d5b19daa24eca',
+                  }}
+                />
+              </TouchableHighlight>
+              <TouchableHighlight
+                onPress={() => {
+                  alert('Window Washing Section');
+                }}>
+                <Image
+                  style={styles.containerImage}
+                  source={{
+                    uri: 'https://codehs.com/uploads/6b19325e1935ee43e75ab139f32de2e8',
+                  }}
+                />
+              </TouchableHighlight>
+              <TouchableHighlight
+                onPress={() => {
+                  alert('Move-in/Move-out Section');
+                }}>
+                <Image
+                  style={styles.containerImage}
+                  source={{
+                    uri: 'https://codehs.com/uploads/b76d7fc259d2a887e59425a42bb95703',
+                  }}
+                />
+              </TouchableHighlight>
             </View>
             <View style={styles.containerRight}>
-              <Image
-                style={styles.containerImage}
-                source={{
-                  uri: 'https://codehs.com/uploads/f3ee1e5f008fc8d0157a03a439875174',
-                }}
-              />
-              <Image
-                style={styles.containerImage}
-                source={{
-                  uri: 'https://codehs.com/uploads/2d86d10df16a428e9094e6276dd1aedd',
-                }}
-              />
-              <Image
-                style={styles.containerImage}
-                source={{
-                  uri: 'https://codehs.com/uploads/5b652df4313dd8474aa9e386ac329faa',
-                }}
-              />
+            <TouchableHighlight
+                onPress={() => {
+                  alert('Maid Services Section');
+                }}>
+                <Image
+                  style={styles.containerImage}
+                  source={{
+                    uri: 'https://codehs.com/uploads/f3ee1e5f008fc8d0157a03a439875174',
+                  }}
+                />
+              </TouchableHighlight>
+              <TouchableHighlight
+                onPress={() => {
+                  alert('Comercial Cleaning Section');
+                }}>
+                <Image
+                  style={styles.containerImage}
+                  source={{
+                    uri: 'https://codehs.com/uploads/2d86d10df16a428e9094e6276dd1aedd',
+                  }}
+                />
+              </TouchableHighlight>
+              <TouchableHighlight
+                onPress={() => {
+                  alert('Carpet Cleaning Section');
+                }}>
+                <Image
+                  style={styles.containerImage}
+                  source={{
+                    uri: 'https://codehs.com/uploads/5b652df4313dd8474aa9e386ac329faa',
+                  }}
+                />
+              </TouchableHighlight>
             </View>
           </View>
 
