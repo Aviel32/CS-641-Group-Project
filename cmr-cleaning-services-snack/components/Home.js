@@ -43,19 +43,15 @@ export default class App extends Component {
           <View style={styles.containerHeader}>
             <Text style={styles.title}>CMR Cleaning Services</Text>
             <Text style={styles.information}>
-              Reliable house cleaning professionals serving the greater Reno
-              area. We provide one of the best cleaning services for home,
-              office, construction sites, and more! We can take on any job at
-              any time. All equipment is included at no extra charge. Please
+              We are a high-quality and professional cleaning company that caters to each client's unique white glove desired services. Currently we are serving the greater Reno
+              area and continuing to expand in the near future. Our unique white glove services include top quality care for your home,
+              office, construction sites, and more! We provide services 24-hours a day, 7 days a week. Please
               call us today for a FREE ESTIMATE. Se Habla Espanol
-            </Text>
-            <Text style={styles.paragraphCellPhone}>
-              Call Now (775)-507-8158
             </Text>
 
             <TouchableHighlight
               onPress={() => {
-                alert('Alert Message!');
+                alert('Your request for a quote was successfully submited. An agent will contact you shortly.');
               }}>
               <Text style={styles.paragraphButtonQuote}>Get a Quote</Text>
             </TouchableHighlight>
@@ -105,7 +101,10 @@ export default class App extends Component {
           </View>
 
           <View style={styles.containerContact}>
-            <Text style={styles.paragraphContact}>Contact Us</Text>
+            <Text style={styles.paragraphContact}>Contact us</Text>
+            <Text style={styles.paragraphCellPhone}>
+              (775)-507-8158
+            </Text>
             <View style={styles.containerContactName}>
               <TextInput
                 placeholder="Name"
@@ -126,7 +125,7 @@ export default class App extends Component {
             />
             <TouchableHighlight
               onPress={() => {
-                alert('Alert Message!');
+                alert('Thank you! Your information has been submited. An agent will contact you shortly.');
               }}>
               <View style={styles.buttonSubmit}>
                 <Text style={styles.paragraphButtonSubmit}>Submit</Text>
@@ -184,7 +183,7 @@ const styles = StyleSheet.create({
     fontSize: deviceHeight / 30,
     marginTop: 2,
     marginBottom: 2,
-    fontFamily: 'Roboto Light',
+    fontFamily: 'serif',
   },
   textInput: {
     height: 0.5 * (deviceHeight / 10),
@@ -202,7 +201,7 @@ const styles = StyleSheet.create({
     borderWidth: 0.5,
     margin: 3,
     paddingStart: 6,
-    fontFamily: 'Roboto',
+    fontFamily: 'serif',
   },
   buttonSubmit: {
     color: 'black',
@@ -213,7 +212,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   paragraphButtonSubmit: {
-    fontFamily: 'Roboto',
+    fontFamily: 'serif',
   },
   containerServices: {
     height: 10 * (deviceHeight / 10),
@@ -237,41 +236,39 @@ const styles = StyleSheet.create({
     width: 8.5 * (deviceWidth / 10),
     borderRadius: 10,
     marginTop: 1,
-    marginBottom: 15,
+    marginBottom: 5,
   },
   paragraphButtonQuote: {
     color: 'black',
     textAlign: 'center',
     backgroundColor: '#E5E059',
-    marginTop: 8,
-    padding: 10,
     borderRadius: 10,
-    fontFamily: 'Roboto',
+    padding: 10,
+    marginTop: 5,
   },
   paragraphCellPhone: {
-    color: 'blue',
+    color: 'black',
     textAlign: 'center',
-    fontSize: deviceHeight / 45,
+    fontSize: deviceHeight / 50,
     marginTop: 6,
     marginBottom: 6,
-    fontFamily: 'Roboto',
+    fontFamily: 'serif',
+    justifyContent: 'center',
   },
   title: {
     color: 'black',
     textAlign: 'center',
-    fontSize: deviceHeight / 20,
+    fontSize: deviceHeight / 30,
     marginTop: 6,
-    fontFamily: 'Roboto Light',
+    fontFamily: 'serif',
+    fontStyle: 'italic',
   },
   information: {
     color: 'silver',
-    textAlign: 'justify',
     marginTop: 6,
-    marginEnd: 12,
-    marginStart: 12,
-    marginBottom: 5,
+    marginBottom: 20,
     padding: 5,
-    fontSize: deviceHeight / 55,
-    fontFamily: 'Roboto Condensed',
+    fontSize: deviceHeight / 62,
+    fontFamily: 'serif',
   },
 });
